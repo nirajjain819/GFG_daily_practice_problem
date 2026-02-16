@@ -6,7 +6,7 @@ Quick reference to all solved problems in chronological order.
 
 ## 🔍 Filter by Difficulty
 
-- **Easy:** 1 problem
+- **Easy:** 2 problems
 - **Medium:** 0 problems  
 - **Hard:** 1 problem
 
@@ -17,12 +17,22 @@ Quick reference to all solved problems in chronological order.
 ### Binary Search (1)
 - [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
 
-### Arrays (1)
-- [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
-
-### Greedy (2)
+### Arrays (3)
 - [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
 - [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
+- [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
+
+### Greedy (3)
+- [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
+- [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
+- [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
+
+### Sorting (2)
+- [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
+- [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
+
+### Intervals (1)
+- [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
 
 ### Sliding Window (1)
 - [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
@@ -85,8 +95,25 @@ Distribute chocolate packets to m students minimizing difference between max and
 ---
 
 #### Day 3 - Feb 15, 2026
-**Problem:** TBD  
-**Status:** ⏳ Pending
+**Problem:** [Meeting Rooms](https://www.geeksforgeeks.org/problems/meeting-rooms/1)  
+**Difficulty:** Easy ✅  
+**Topics:** Arrays, Sorting, Intervals, Greedy  
+**Key Pattern:** Interval Scheduling  
+**Solution:** [View Code](./Week1/Day03_Meeting_Rooms.java)  
+**Status:** ✅ Solved
+
+**Quick Summary:**  
+Check if one person can attend all meetings given their time intervals. Sort by start time, then check if consecutive meetings overlap.
+
+**Complexity:**
+- Time: O(n log n) - dominated by sorting
+- Space: O(1)
+
+**Test Results:**
+- ✅ 1111/1111 test cases passed
+- ✅ 100% accuracy
+- ✅ Time: 0.39 seconds
+- ✅ Points: 2/2
 
 ---
 
@@ -204,7 +231,29 @@ for (int i = 0; i <= n - windowSize; i++) {
 }
 ```
 
-### 3. Two Pointers
+### 3. Interval Scheduling
+**When to use:** Problems involving time intervals, meeting scheduling, or overlapping ranges.
+
+**Problems:**
+- Day 3: Meeting Rooms
+- More coming...
+
+**Template:**
+```java
+// Sort intervals by start time
+Arrays.sort(intervals, (a,b) -> a[0] - b[0]);
+
+// Check consecutive intervals for overlap
+for (int i = 0; i < n-1; i++) {
+    if (intervals[i][1] > intervals[i+1][0]) {
+        // Overlap found
+        return false;
+    }
+}
+return true;  // No overlaps
+```
+
+### 4. Two Pointers
 Coming soon...
 
 ### 3. Sliding Window
@@ -219,28 +268,30 @@ Coming soon...
 
 ### Difficulty Distribution
 ```
-Easy:    ▓▓▓▓▓░░░░░ 50%
+Easy:    ▓▓▓▓▓▓▓░░░ 67%
 Medium:  ░░░░░░░░░░ 0%
-Hard:    ▓▓▓▓▓░░░░░ 50%
+Hard:    ▓▓▓░░░░░░░ 33%
 ```
 
 ### Topic Distribution
 ```
-Binary Search:  ▓▓▓▓▓░░░░░ 50%
-Arrays:         ▓▓▓▓▓░░░░░ 50%
+Arrays:         ▓▓▓▓▓▓▓▓▓▓ 100%
+Binary Search:  ▓▓▓░░░░░░░ 33%
 Greedy:         ▓▓▓▓▓▓▓▓▓▓ 100%
-Sliding Window: ▓▓▓▓▓░░░░░ 50%
+Sorting:        ▓▓▓▓▓▓▓░░░ 67%
+Intervals:      ▓▓▓░░░░░░░ 33%
+Sliding Window: ▓▓▓░░░░░░░ 33%
 Strings:        ░░░░░░░░░░ 0%
 DP:             ░░░░░░░░░░ 0%
 Graphs:         ░░░░░░░░░░ 0%
 ```
 
 ### Streak Stats
-- Current Streak: 2 days 🔥
-- Longest Streak: 2 days
-- Problems Solved: 2
+- Current Streak: 3 days 🔥
+- Longest Streak: 3 days
+- Problems Solved: 3
 - Success Rate: 100%
 
 ---
 
-*Last Updated: Feb 14, 2026*
+*Last Updated: Feb 15, 2026*
