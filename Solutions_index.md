@@ -8,7 +8,7 @@ Quick reference to all solved problems in chronological order.
 
 - **Easy:** 2 problems
 - **Medium:** 0 problems  
-- **Hard:** 1 problem
+- **Hard:** 2 problems
 
 ---
 
@@ -17,22 +17,21 @@ Quick reference to all solved problems in chronological order.
 ### Binary Search (1)
 - [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
 
-### Arrays (3)
+### Arrays (4)
 - [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
 - [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
 - [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
+- [Day 4: Maximum Overlapping Intervals](./Week1/Day04_Maximum_Overlapping_Intervals.java)
 
-### Greedy (3)
-- [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
-- [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
+### Intervals (2)
 - [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
+- [Day 4: Maximum Overlapping Intervals](./Week1/Day04_Maximum_Overlapping_Intervals.java)
 
-### Sorting (2)
-- [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
-- [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
+### Two Pointer (1)
+- [Day 4: Maximum Overlapping Intervals](./Week1/Day04_Maximum_Overlapping_Intervals.java)
 
-### Intervals (1)
-- [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
+### Sweep Line (1)
+- [Day 4: Maximum Overlapping Intervals](./Week1/Day04_Maximum_Overlapping_Intervals.java)
 
 ### Sliding Window (1)
 - [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
@@ -118,6 +117,32 @@ Check if one person can attend all meetings given their time intervals. Sort by 
 ---
 
 #### Day 4 - Feb 16, 2026
+**Problem:** [Maximum Overlapping Intervals](https://www.geeksforgeeks.org/problems/maximum-number-of-overlapping-intervals/1)  
+**Difficulty:** Hard 🔥  
+**Topics:** Arrays, Sorting, Two Pointer, Sweep Line, Intervals  
+**Key Pattern:** Two Pointer on Sorted Start/End Arrays  
+**Solution:** [View Code](./Week1/Day04_Maximum_Overlapping_Intervals.java)  
+**Status:** ✅ Solved
+
+**Quick Summary:**  
+Find maximum intervals overlapping at any point. Three approaches covered: Brute Force O(n²), Sweep Line O(n log n), Two Pointer O(n log n). Optimal: separate and sort start/end arrays, use two pointers to simulate meeting room bookings.
+
+**Complexity:**
+- Time: O(n log n) - dominated by sorting
+- Space: O(n) - start[] and end[] arrays
+
+**Test Results:**
+- ✅ 1115/1115 test cases passed
+- ✅ 100% accuracy
+- ✅ Time: 0.66 seconds
+- ✅ Points: 8/8
+- ✅ Total Score: 126
+
+**Key Insight:** Start = meeting begins (overlap++), End = meeting ends (overlap--)
+
+---
+
+#### Day 5 - Feb 17, 2026
 **Problem:** TBD  
 **Status:** ⏳ Pending
 
@@ -268,30 +293,33 @@ Coming soon...
 
 ### Difficulty Distribution
 ```
-Easy:    ▓▓▓▓▓▓▓░░░ 67%
+Easy:    ▓▓▓▓▓░░░░░ 50%
 Medium:  ░░░░░░░░░░ 0%
-Hard:    ▓▓▓░░░░░░░ 33%
+Hard:    ▓▓▓▓▓░░░░░ 50%
 ```
 
 ### Topic Distribution
 ```
 Arrays:         ▓▓▓▓▓▓▓▓▓▓ 100%
-Binary Search:  ▓▓▓░░░░░░░ 33%
-Greedy:         ▓▓▓▓▓▓▓▓▓▓ 100%
-Sorting:        ▓▓▓▓▓▓▓░░░ 67%
-Intervals:      ▓▓▓░░░░░░░ 33%
-Sliding Window: ▓▓▓░░░░░░░ 33%
+Greedy:         ▓▓▓▓▓▓▓░░░ 75%
+Sorting:        ▓▓▓▓▓▓▓▓▓▓ 100%
+Intervals:      ▓▓▓▓▓░░░░░ 50%
+Binary Search:  ▓▓▓░░░░░░░ 25%
+Two Pointer:    ▓▓▓░░░░░░░ 25%
+Sweep Line:     ▓▓▓░░░░░░░ 25%
+Sliding Window: ▓▓▓░░░░░░░ 25%
 Strings:        ░░░░░░░░░░ 0%
 DP:             ░░░░░░░░░░ 0%
-Graphs:         ░░░░░░░░░░ 0%
 ```
 
 ### Streak Stats
-- Current Streak: 3 days 🔥
-- Longest Streak: 3 days
-- Problems Solved: 3
+- Current Streak: 4 days 🔥
+- Longest Streak: 4 days
+- Problems Solved: 4
+- Easy: 2 | Hard: 2
 - Success Rate: 100%
+- Total Score: 126
 
 ---
 
-*Last Updated: Feb 15, 2026*
+*Last Updated: Feb 16, 2026*
