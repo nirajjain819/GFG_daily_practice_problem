@@ -2,7 +2,7 @@
 
 > My journey of solving one problem every day for 60 consecutive days
 
-[![Streak](https://img.shields.io/badge/Current%20Streak-4%2F60-brightgreen)]()
+[![Streak](https://img.shields.io/badge/Current%20Streak-5%2F60-brightgreen)]()
 [![Language](https://img.shields.io/badge/Language-Java-orange)]()
 [![Challenge](https://img.shields.io/badge/Challenge-GFG%202026-blue)]()
 
@@ -29,7 +29,7 @@ This repository documents my participation in the **GeeksforGeeks 60-Day Streak 
 
 | Week | Days Completed | Status |
 |------|----------------|--------|
-| Week 1 (Feb 13-19) | 4/7 | 🟢 In Progress |
+| Week 1 (Feb 13-19) | 5/7 | 🟢 In Progress |
 | Week 2 (Feb 20-26) | 0/7 | ⏳ Upcoming |
 | Week 3 (Feb 27-Mar 5) | 0/7 | ⏳ Upcoming |
 | Week 4 (Mar 6-12) | 0/7 | ⏳ Upcoming |
@@ -39,7 +39,7 @@ This repository documents my participation in the **GeeksforGeeks 60-Day Streak 
 | Week 8 (Apr 3-9) | 0/7 | ⏳ Upcoming |
 | Week 9 (Apr 10-13) | 0/4 | ⏳ Upcoming |
 
-**Total Progress: 4/60 Days (6.67%)**
+**Total Progress: 5/60 Days (8.33%)**
 
 ---
 
@@ -70,7 +70,7 @@ GFG_daily_practice_problem/
 | 2 | Feb 14 | [Chocolate Distribution Problem](https://www.geeksforgeeks.org/problems/chocolate-distribution-problem/1) | Easy ✅ | Arrays, Greedy, Sliding Window | [View](./Week1/Day02_Chocolate_Distribution.java) |
 | 3 | Feb 15 | [Meeting Rooms](https://www.geeksforgeeks.org/problems/meeting-rooms/1) | Easy ✅ | Arrays, Sorting, Intervals | [View](./Week1/Day03_Meeting_Rooms.java) |
 | 4 | Feb 16 | [Maximum Overlapping Intervals](https://www.geeksforgeeks.org/problems/maximum-number-of-overlapping-intervals/1) | Hard 🔥 | Arrays, Sorting, Two Pointer, Sweep Line | [View](./Week1/Day04_Maximum_Overlapping_Intervals.java) |
-| 5 | Feb 17 | - | - | - | - |
+| 5 | Feb 17 | [Count Inversions](https://www.geeksforgeeks.org/problems/inversion-of-array/1) | Medium 🟡 | Arrays, Merge Sort, Divide and Conquer | [View](./Week1/Day05_Count_Inversions.java) |
 | 6 | Feb 18 | - | - | - | - |
 | 7 | Feb 19 | - | - | - | - |
 
@@ -82,6 +82,7 @@ GFG_daily_practice_problem/
 - ✅ **Day 2:** Streak maintained!
 - ✅ **Day 3:** Three-day streak! 🔥
 - ✅ **Day 4:** Four-day streak! Solved 2nd Hard! 💪
+- ✅ **Day 5:** Five-day streak! First Medium! 🎯
 - ⏳ **Day 7:** First week complete
 - ⏳ **Day 30:** Halfway there
 - ⏳ **Day 60:** Challenge complete!
@@ -95,6 +96,7 @@ GFG_daily_practice_problem/
 - **Greedy + Sliding Window:** Day 2 (Chocolate Distribution)
 - **Interval Scheduling:** Day 3 (Meeting Rooms)
 - **Two Pointer + Sweep Line:** Day 4 (Maximum Overlapping Intervals)
+- **Modified Merge Sort:** Day 5 (Count Inversions)
 - More to come...
 
 ### Topics Covered:
@@ -172,10 +174,10 @@ This repository is for educational purposes. All problems are from GeeksforGeeks
 
 If you're also doing this challenge, let's connect! Drop a star ⭐ if you find this helpful.
 
-**Current Streak:** 4 🔥  
+**Current Streak:** 5 🔥  
 **Target:** 60 🎯  
-**Status:** On a roll! 💪
+**Status:** Crushing it! 💪
 
 ---
 
-*Last Updated: Feb 16, 2026*
+*Last Updated: Feb 17, 2026*
