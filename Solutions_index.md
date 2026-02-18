@@ -7,7 +7,7 @@ Quick reference to all solved problems in chronological order.
 ## 🔍 Filter by Difficulty
 
 - **Easy:** 2 problems
-- **Medium:** 0 problems  
+- **Medium:** 1 problem  
 - **Hard:** 2 problems
 
 ---
@@ -17,11 +17,18 @@ Quick reference to all solved problems in chronological order.
 ### Binary Search (1)
 - [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
 
-### Arrays (4)
+### Arrays (5)
 - [Day 1: The Painter's Partition Problem-II](./Week1/Day01_Painters_Partition.java)
 - [Day 2: Chocolate Distribution Problem](./Week1/Day02_Chocolate_Distribution.java)
 - [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
 - [Day 4: Maximum Overlapping Intervals](./Week1/Day04_Maximum_Overlapping_Intervals.java)
+- [Day 5: Count Inversions](./Week1/Day05_Count_Inversions.java)
+
+### Merge Sort (1)
+- [Day 5: Count Inversions](./Week1/Day05_Count_Inversions.java)
+
+### Divide and Conquer (1)
+- [Day 5: Count Inversions](./Week1/Day05_Count_Inversions.java)
 
 ### Intervals (2)
 - [Day 3: Meeting Rooms](./Week1/Day03_Meeting_Rooms.java)
@@ -143,14 +150,28 @@ Find maximum intervals overlapping at any point. Three approaches covered: Brute
 ---
 
 #### Day 5 - Feb 17, 2026
-**Problem:** TBD  
-**Status:** ⏳ Pending
+**Problem:** [Count Inversions](https://www.geeksforgeeks.org/problems/inversion-of-array/1)  
+**Difficulty:** Medium 🟡  
+**Topics:** Arrays, Merge Sort, Divide and Conquer  
+**Key Pattern:** Modified Merge Sort  
+**Solution:** [View Code](./Week1/Day05_Count_Inversions.java)  
+**Status:** ✅ Solved
 
----
+**Quick Summary:**  
+Count pairs (i, j) where i < j and arr[i] > arr[j]. Classic problem solved with modified merge sort. Key insight: when merging, if left[i] > right[j], all remaining elements in left subarray form inversions with right[j]. Count them all at once: (mid - i + 1).
 
-#### Day 5 - Feb 17, 2026
-**Problem:** TBD  
-**Status:** ⏳ Pending
+**Complexity:**
+- Time: O(n log n) - merge sort
+- Space: O(n) - temporary arrays
+
+**Test Results:**
+- ✅ 1115/1115 test cases passed
+- ✅ 100% accuracy
+- ✅ Time: 0.77 seconds
+- ✅ Points: 4/4
+- ✅ Total Score: 130
+
+**Key Insight:** Divide & Conquer - count inversions in left, right, and across during merge.
 
 ---
 
@@ -293,33 +314,35 @@ Coming soon...
 
 ### Difficulty Distribution
 ```
-Easy:    ▓▓▓▓▓░░░░░ 50%
-Medium:  ░░░░░░░░░░ 0%
-Hard:    ▓▓▓▓▓░░░░░ 50%
+Easy:    ▓▓▓▓░░░░░░ 40%
+Medium:  ▓▓░░░░░░░░ 20%
+Hard:    ▓▓▓▓░░░░░░ 40%
 ```
 
 ### Topic Distribution
 ```
-Arrays:         ▓▓▓▓▓▓▓▓▓▓ 100%
-Greedy:         ▓▓▓▓▓▓▓░░░ 75%
-Sorting:        ▓▓▓▓▓▓▓▓▓▓ 100%
-Intervals:      ▓▓▓▓▓░░░░░ 50%
-Binary Search:  ▓▓▓░░░░░░░ 25%
-Two Pointer:    ▓▓▓░░░░░░░ 25%
-Sweep Line:     ▓▓▓░░░░░░░ 25%
-Sliding Window: ▓▓▓░░░░░░░ 25%
-Strings:        ░░░░░░░░░░ 0%
-DP:             ░░░░░░░░░░ 0%
+Arrays:           ▓▓▓▓▓▓▓▓▓▓ 100%
+Greedy:           ▓▓▓▓▓░░░░░ 60%
+Sorting:          ▓▓▓▓▓▓▓▓░░ 80%
+Intervals:        ▓▓▓▓░░░░░░ 40%
+Binary Search:    ▓▓░░░░░░░░ 20%
+Two Pointer:      ▓▓░░░░░░░░ 20%
+Sweep Line:       ▓▓░░░░░░░░ 20%
+Sliding Window:   ▓▓░░░░░░░░ 20%
+Merge Sort:       ▓▓░░░░░░░░ 20%
+Divide & Conquer: ▓▓░░░░░░░░ 20%
+Strings:          ░░░░░░░░░░ 0%
+DP:               ░░░░░░░░░░ 0%
 ```
 
 ### Streak Stats
-- Current Streak: 4 days 🔥
-- Longest Streak: 4 days
-- Problems Solved: 4
-- Easy: 2 | Hard: 2
+- Current Streak: 5 days 🔥
+- Longest Streak: 5 days
+- Problems Solved: 5
+- Easy: 2 | Medium: 1 | Hard: 2
 - Success Rate: 100%
-- Total Score: 126
+- Total Score: 130
 
 ---
 
-*Last Updated: Feb 16, 2026*
+*Last Updated: Feb 17, 2026*
